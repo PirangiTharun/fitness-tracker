@@ -1,264 +1,109 @@
 export const days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
 
 
 export const workouts = [
   {
-    sessionName: "Rest Day",
-    workout: [],
+    sessionName: "RestDay",
+    "workout": []
   },
   {
-    sessionName: "Push Day 1",
-    todaysWork: "Chest, Shoulders and Triceps",
-    workout: [
-      {
-        name: "Flat Barbell Bench Press",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Incline Dumbbell Press	",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Standing Military Press",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Wide-Grip Upright Rows	",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Narrow Grip Dips",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Cable Pushdowns",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
+    "sessionName": "Push day 1",
+    "workout": [
+      { "name": "Flat bench press", "type": "comp", "helper": "" },
+      { "name": "Barbell overhead press", "type": "comp", "helper": "" },
+      { "name": "Incline dumbell flyes", "type": "musc", "helper": "" },
+      { "name": "Lateral raise (side)", "type": "musc", "helper": "" },
+      { "name": "V bar tricep push down", "type": "musc", "helper": "" },
+      { "name": "Plank", "type": "Abs", "helper": "" }
     ],
+    "warmup": [
+      { "name": "Inch worm", helper: "15 Reps" },
+      { "name": "Cobra To Mountain", helper: "15 Reps" },
+    ]
   },
   {
-    sessionName: "Pull Day 1",
-    todaysWork: "Biceps, Back, Traps and Foreamrs",
-    workout: [
-      { name: "Deadlifts", sets: 3, reps: 12, idealWeight: "20kgs" },
-      {
-        name: "Close grip chin ups",
-        sets: 3,
-        reps: 10,
-        idealWeight: "",
-      },
-      {
-        name: "Bent over rows",
-        sets: 3,
-        reps: 15,
-        idealWeight: "10kgs",
-      },
-      {
-        name: "Wide grip cable row",
-        sets: 3,
-        reps: 15,
-        idealWeight: "30kgs",
-      },
-      {
-        name: "Barbell curls",
-        sets: 3,
-        reps: 15,
-        idealWeight: "7.5Kgs",
-      },
-      {
-        name: "Forearms",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
+    "sessionName": "Pull day 1",
+    "workout": [
+      { "name": "Pull ups", "type": "comp", "helper": "" },
+      { "name": "Seated cable row", "type": "comp", "helper": "" },
+      { "name": "Lat pulldown (wide grip)", "type": "musc", "helper": "" },
+      { "name": "Barbell curls", "type": "musc", "helper": "" },
+      { "name": "Hammer curls", "type": "musc", "helper": "" },
+      { "name": "Forearms", "type": "musc", "helper": "" },
+      { "name": "Hanging leg raises", "type": "Abs", "helper": "" }
     ],
+    "warmup": [
+      { "name": "Cat Camel", helper: "15 Reps" },
+      { "name": "Prone Walkout", helper: "45 Secs" },
+    ]
   },
   {
-    sessionName: "Legs Day 1",
-    todaysWork: "Legs, Glutes and ABS",
-    workout: [
-      {
-        name: "Barbell Back Squat",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Leg Press",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Leg Extensions",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Leg reverse Extensions",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Lunges",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Calf raises",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
+    "sessionName": "Leg day 1",
+    "workout": [
+      { "name": "Squats (barbell or bodyweight)", "type": "comp", "helper": "" },
+      { "name": "Leg press", "type": "comp", "helper": "" },
+      { "name": "Hamstring curls", "type": "musc", "helper": "" },
+      { "name": "Calf raises (seated)", "type": "musc", "helper": "" },
+      { "name": "Glute bridges", "type": "musc", "helper": "" },
+      { "name": "Russian twists", "type": "Abs", "helper": "" }
     ],
+    "warmup": [
+      { "name": "Hip Flexor Lunge Stretch", helper: "15 Reps" },
+      { "name": "Cobra To Mountain", helper: "15 Reps" },
+    ]
   },
   {
-    sessionName: "Push Day 2",
-    todaysWork: "Chest, Shoulders and Triceps",
-    workout: [
-      {
-        name: "Decline Bench Press",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Incline Dumbbell Press",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Flat Machine Press",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Seated Smith Machine Shoulder Press",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Wide-Grip Upright Rows",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Overhead Rope Extensions",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
+    "sessionName": "Push day 2",
+    "workout": [
+      { "name": "Dips", "type": "comp", "helper": "" },
+      { "name": "Incline dumbell press", "type": "musc", "helper": "" },
+      { "name": "Decline dumbell flyes", "type": "musc", "helper": "" },
+      { "name": "Front raises", "type": "musc", "helper": "" },
+      { "name": "Triceps overhead extensions", "type": "musc", "helper": "" },
+      { "name": "Crunches", "type": "Abs", "helper": "" }
     ],
+    "warmup": [
+      { "name": "Inch worm", helper: "15 Reps" },
+      { "name": "Cobra To Mountain", helper: "15 Reps" },
+    ]
   },
   {
-    sessionName: "Pull Day 2",
-    todaysWork: "Biceps, Back, Traps and Foreamrs",
-    workout: [
-      {
-        name: "Shrugs",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "T-Bar Row",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Bent Over Rows",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Close grip Chin-ups",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Bicep curls",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Hammer",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
+    "sessionName": "Pull day 2",
+    "workout": [
+      { "name": "Chin ups", "type": "comp", "helper": "" },
+      { "name": "Bent over barbell row", "type": "comp", "helper": "" },
+      { "name": "Lat pulldown (close grip)", "type": "musc", "helper": "" },
+      { "name": "ez barbell curls", "type": "musc", "helper": "" },
+      { "name": "forearms", "type": "musc", "helper": "" },
+      { "name": "side plank", "type": "Abs", "helper": "" }
     ],
+    "warmup": [
+      { "name": "Cat Camel", helper: "15 Reps" },
+      { "name": "Prone Walkout", helper: "45 Secs" },
+    ]
   },
   {
-    sessionName: "Legs Day 2",
-    todaysWork: "Legs, Glutes and ABS",
-    workout: [
-      {
-        name: "Barbell Front Squat",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Barbell Hip Thrust",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Kettlebell Swing",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Romanian Deadlifts",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Russian twists",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
-      {
-        name: "Leg raises",
-        sets: 3,
-        reps: 15,
-        idealWeight: "",
-      },
+    "sessionName": "Legs & Core day 2",
+    "workout": [
+      { "name": "Bulgarian split squats", "type": "comp", "helper": "" },
+      { "name": "Sumo squats", "type": "comp", "helper": "" },
+      { "name": "Single leg Calf raises", "type": "musc", "helper": "" },
+      { "name": "Leg extensions", "type": "musc", "helper": "" },
+      { "name": "Reverse leg extensions", "type": "musc", "helper": "" },
+      { "name": "Hollow body hold", "type": "Abs", "helper": "" }
     ],
+    "warmup": [
+      { "name": "Hip Flexor Lunge Stretch", helper: "15 Reps" },
+      { "name": "Cobra To Mountain", helper: "15 Reps" },
+    ]
   },
-];
+]
+  ;
