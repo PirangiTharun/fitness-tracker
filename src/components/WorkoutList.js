@@ -4,7 +4,6 @@ import comp from "../assets/multiple.png";
 import warmup from "../assets/warmup.png";
 
 const WorkoutList = ({ workoutList }) => {
-  console.log(workoutList);
   const getSrc = (type) => {
     if (type === "comp") return comp;
     else if (type === "musc") return arm;
@@ -12,7 +11,7 @@ const WorkoutList = ({ workoutList }) => {
   };
   return (
     <div>
-      {workoutList.map((workout) => {
+      {workoutList?.map((workout) => {
         return (
           <div style={{ display: "flex", gap: 16, margin: "16px 24px" }}>
             {workout.type ? (
